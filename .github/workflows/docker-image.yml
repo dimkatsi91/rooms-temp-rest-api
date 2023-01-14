@@ -28,4 +28,4 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USER }}/rooms-temp:latest
+        tags: ${{ secrets.DOCKERHUB_USER }}/rooms-temp:$(date +%s)
